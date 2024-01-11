@@ -1,11 +1,9 @@
 import random
 import time
 from string import capwords
-import json
 
 from functions import (
   black,
-  c_print,
   clear,
   dark_grey,
   light_gray,
@@ -15,7 +13,7 @@ from functions import (
   white,
   yellow,
 )
-
+print("h")
 
 class ChatBot():
   def __init__(self):
@@ -93,9 +91,6 @@ clear()
 print(f"{light_gray}How can I help you {user_name}?{white}\n")
 
 user = User(user_name, user_age)
-userJSON = json.dumps(user.__dict__, indent=4)
-
-time.sleep(3)
 
 while True:
   print_options()

@@ -1,7 +1,6 @@
 import os
 import sys
 import time
-import textwrap
 
 green = "\u001b[32m"
 dark_yellow = "\u001b[33m"
@@ -32,9 +31,3 @@ def t_print(text):
     sys.stdout.write(character)
     sys.stdout.flush()
     time.sleep(0.03)
-
-def c_print(text):
-  wrapstring = textwrap.wrap(text, width=70)
-  for line in wrapstring:
-      # print(line)
-      print('{:^70}'.format(line))
